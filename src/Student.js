@@ -24,9 +24,9 @@ const getData=()=> {
   .catch((err) => console.log(err));
 }
 
-  useEffect(() => {
-    getData()
-  }, []); 
+ useEffect(() => {
+    getData();
+}, [getData]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
